@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-	name: "Opus",
+	name: "SwiftOpus",
 	platforms: [
 		.macOS(.v10_12),
 		.iOS(.v12),
@@ -15,8 +15,8 @@ let package = Package(
 			targets: ["Copus"]
 		),
 		.library(
-			name: "Opus",
-			targets: ["Opus", "Copus"]
+			name: "SwiftOpus",
+			targets: ["SwiftOpus", "Copus"]
 		),
 	],
 	dependencies: [],
@@ -106,12 +106,12 @@ let package = Package(
 			]
 		),
 		.target(
-			name: "Opus",
+			name: "SwiftOpus",
 			dependencies: ["Copus"]
 		),
 		.testTarget(
 			name: "OpusTests",
-			dependencies: ["Opus"],
+			dependencies: ["SwiftOpus"],
 			resources: [.copy("Resources")]
 		),
 	]
