@@ -107,7 +107,8 @@ let package = Package(
 		),
 		.target(
 			name: "SwiftOpus",
-			dependencies: ["Copus"]
+			dependencies: ["Copus"],
+			path: "Sources/SwiftOpus"
 		),
 		.testTarget(
 			name: "OpusTests",
